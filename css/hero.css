@@ -1,0 +1,304 @@
+/* Hero Section with Static Light Effects */
+.hero-section {
+  min-height: 90vh;
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+/* Stronger Light Background Effects — top-right + bottom-left glory */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    /* Stronger top-right light source (glory effect) */
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.12) 0%, transparent 45%),
+    
+    /* Stronger bottom-left light source (glory effect) */
+    radial-gradient(circle at 18% 82%, rgba(255, 255, 255, 0.10) 0%, transparent 50%),
+    
+    /* Very subtle center fill */
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 70%),
+    
+    /* Subtle grid pattern */
+    linear-gradient(rgba(255, 255, 255, 0.008) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.008) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 60px 60px, 60px 60px;
+  z-index: 1;
+}
+
+/* Light Boxes (Static) — more prominent & 30% larger */
+.hero-bg-boxes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.box {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.07);          /* increased opacity */
+  border: 1.5px solid rgba(255, 255, 255, 0.35);  /* stronger border */
+  border-radius: 12px;
+  backdrop-filter: blur(4px);                     /* softer but visible blur */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);     /* stronger shadow */
+}
+
+/* Static Box Positions — sizes increased ~30% */
+.box:nth-child(1) {
+  width: 104px;   /* 80 → 104 */
+  height: 104px;
+  top: 18%;
+  left: 8%;
+  transform: rotate(15deg);
+}
+
+.box:nth-child(2) {
+  width: 78px;    /* 60 → 78 */
+  height: 78px;
+  top: 58%;
+  right: 12%;
+  transform: rotate(-10deg);
+}
+
+.box:nth-child(3) {
+  width: 130px;   /* 100 → 130 */
+  height: 130px;
+  bottom: 12%;
+  left: 18%;
+  transform: rotate(5deg);
+}
+
+.box:nth-child(4) {
+  width: 91px;    /* 70 → 91 */
+  height: 91px;
+  top: 22%;
+  right: 22%;
+  transform: rotate(-15deg);
+}
+
+.box:nth-child(5) {
+  width: 65px;    /* 50 → 65 */
+  height: 65px;
+  bottom: 32%;
+  right: 38%;
+  transform: rotate(10deg);
+}
+
+/* Main Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(236, 236, 236, 0.959);
+  box-shadow: 
+    0 20px 40px rgba(233, 229, 229, 0.884),
+    0 0 80px rgba(204, 204, 204, 0.808);
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff 0%, #aaa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: #cfcfcf;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+/* Button Container — keep horizontal by default */
+.btn-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: nowrap;           /* prevent wrapping unless very small screen */
+}
+
+/* CTA Badge */
+.cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 2rem;
+}
+
+.cta-badge img {
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+/* Buttons */
+.hero-section .btn-outline-light {
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.hero-section .btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.hero-section .btn-light {
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #fff 0%, #e0e0e0 100%);
+  color: #000;
+  border: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.hero-section .btn-light:hover {
+  background: linear-gradient(135deg, #e0e0e0 0%, #fff 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Sparkle icon */
+.fa-wand-magic-sparkles {
+  color: #080808;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .hero-content {
+    padding: 2.5rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+  
+  .box {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+    min-height: 85vh;
+  }
+  
+  .hero-content {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .btn-container {
+    flex-direction: row;          /* still try to keep horizontal */
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .box {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-container {
+    flex-direction: column;       /* stack only on very small screens */
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .hero-section .btn-light,
+  .hero-section .btn-outline-light {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .hero-content {
+    padding: 1.5rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-section p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-badge {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .box {
+    display: none;
+  }
+}

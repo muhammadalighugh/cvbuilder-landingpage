@@ -1,0 +1,235 @@
+/* navbar.css code - Complete Responsive Navbar */
+
+.navbar {
+  padding: 1rem 2rem;
+  background-color: transparent !important;
+}
+
+/* Navbar toggler customization */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Nav Links - EXACT MONTSEERRAT SPECS */
+.navbar-nav .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1; /* 100% of font-size */
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  font-weight: 400; /* Slightly bolder on hover */
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 400; /* Active link slightly bolder */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 80%;
+}
+
+/* Create CV Button - EXACT SPECIFICATIONS */
+.create-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* exact gap: 6px */
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #0f0f0f !important;
+  border: none;
+  border-radius: 4px; /* exact border-radius: 4px */
+  
+  /* Exact font properties */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px; /* exact font-size: 18px */
+  line-height: 1; /* 100% line-height */
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  
+  /* Exact dimensions and padding */
+  width: 224px; /* exact width: 224px */
+  height: 40px; /* exact height: 40px */
+  padding: 0 20px; /* exact padding-right: 20px, padding-left: 20px */
+  
+  /* Other properties */
+  opacity: 1;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.create-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  color: #0f0f0f;
+}
+
+
+
+.fa-wand-magic-sparkles {
+  animation: sparkle 2s infinite;
+  color: #080808;
+  font-size: 16px; /* Match the button font size proportionally */
+}
+
+/* Responsive adjustments using Bootstrap breakpoints */
+@media (max-width: 1200px) {
+  .create-btn {
+    width: 200px; /* Slightly smaller on large tablets */
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-collapse {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .navbar-nav {
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.75rem 0;
+    font-size: 14px; /* Smaller on tablet */
+  }
+  
+  .navbar-nav .nav-link::after {
+    bottom: 8px;
+  }
+  
+  .create-btn {
+    margin: 0 auto;
+    display: inline-flex;
+    width: 180px; /* Smaller on tablets */
+    height: 36px;
+    font-size: 14px;
+    padding: 0 16px;
+  }
+  
+  .fa-wand-magic-sparkles {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  
+  .navbar-brand img {
+    height: 35px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 13px;
+  }
+  
+  .create-btn {
+    width: 160px;
+    height: 34px;
+    font-size: 13px;
+    padding: 0 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    font-size: 12px;
+    padding: 0.6rem 0;
+  }
+  
+  .create-btn {
+    width: 140px;
+    height: 32px;
+    font-size: 12px;
+    padding: 0 12px;
+    gap: 4px;
+  }
+  
+  .fa-wand-magic-sparkles {
+    font-size: 12px;
+  }
+  
+  .navbar-toggler {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .navbar-brand img {
+    height: 30px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 11px;
+    padding: 0.5rem 0;
+  }
+  
+  .create-btn {
+    width: 130px;
+    height: 30px;
+    font-size: 11px;
+    padding: 0 10px;
+  }
+  
+  .fa-wand-magic-sparkles {
+    font-size: 11px;
+  }
+}
+
+/* Center alignment for mobile menu */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    width: 100%;
+  }
+}

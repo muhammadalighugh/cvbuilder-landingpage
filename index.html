@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Builder Landing Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/hero.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="images/Logo.svg" alt="CV Builder Logo" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Centered Nav Links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TEMPLATES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+        </ul>
+        
+        <!-- Right Corner Button -->
+        <div class="d-flex">
+          <a class="btn btn-light fw-bold create-btn" href="#">
+            CREATE YOUR CV
+            <i class="fas fa-wand-magic-sparkles ms-2"></i> 
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+ <header class="d-flex flex-column justify-content-center align-items-center text-center hero-section">
+  <div class="cta-badge mb-3">
+    <img src="images/User.svg" alt="users" class="rounded-circle" />
+    <span>1000+ USERS HAVE CREATED THEIR CVS</span>
+  </div>
+  <h1 class="fw-bold display-5 mb-3">Build a professional AI CV in minutes. No stress.</h1>
+  <p class="text-secondary mb-4">CREATE JOB READY RESUMES WITH SMART STEPS, CLEAN TEMPLATES, AND INSTANT EXPORT.</p>
+  
+  <div class="btn-container">
+    <a href="#" class="btn btn-light fw-bold">
+      CREATE YOUR CV
+      <i class="fas fa-wand-magic-sparkles ms-2"></i>
+    </a>
+    <a href="#" class="btn btn-outline-light fw-bold">VIEW TEMPLATES</a>
+  </div>
+</header>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-secondary py-4">
+    &copy; 2026 CV Builder. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
