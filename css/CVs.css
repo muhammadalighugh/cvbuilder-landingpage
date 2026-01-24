@@ -1,0 +1,139 @@
+/* CV Templates Section */
+.cv-templates-section {
+  background: white;
+  padding: 4rem 0;
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-templates-section .container {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+.cv-templates-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+/* Background CV Image */
+.cv-templates-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+/* Fade overlay from all sides */
+.cv-templates-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(to bottom, rgba(229, 229, 229, 0.205) 0%, rgba(255, 255, 255, 0.075) 10%, transparent 25%, transparent 75%, rgba(229, 229, 229, 0.8) 90%, rgba(229, 229, 229, 1) 100%),
+    linear-gradient(to right, rgba(229, 229, 229, 0.096) 0%, rgba(229, 229, 229, 0) 10%, transparent 25%, transparent 75%, rgba(229, 229, 229, 0.8) 90%, rgba(229, 229, 229, 1) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Additional corner fade effect */
+/* .cv-templates-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at top left, transparent 0%, transparent 40%, rgba(229, 229, 229, 0.3) 70%, rgba(229, 229, 229, 0.7) 100%),
+    radial-gradient(ellipse at top right, transparent 0%, transparent 40%, rgba(229, 229, 229, 0.3) 70%, rgba(229, 229, 229, 0.7) 100%),
+    radial-gradient(ellipse at bottom left, transparent 0%, transparent 40%, rgba(229, 229, 229, 0.3) 70%, rgba(229, 229, 229, 0.7) 100%),
+    radial-gradient(ellipse at bottom right, transparent 0%, transparent 40%, rgba(229, 229, 229, 0.3) 70%, rgba(229, 229, 229, 0.7) 100%);
+  pointer-events: none;
+  z-index: 3;
+} */
+
+.view-more-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.875rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 6;
+}
+
+.view-more-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.view-more-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .cv-templates-section {
+    padding: 3rem 0;
+    min-height: 500px;
+  }
+  
+  .view-more-btn {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.813rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv-templates-section {
+    padding: 2.5rem 0;
+    min-height: 400px;
+  }
+  
+  .cv-templates-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .view-more-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-templates-section {
+    padding: 2rem 0;
+    min-height: 350px;
+  }
+  
+  .view-more-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
