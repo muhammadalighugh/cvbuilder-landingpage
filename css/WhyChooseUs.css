@@ -1,0 +1,272 @@
+/* Why Choose Us Section */
+.why-choose-us-section {
+  background: #0a0a0a;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+.why-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.features-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 3rem 0;
+  margin-top: 2rem;
+}
+
+.features-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.features-row.top-row {
+  margin-bottom: 5rem;
+}
+
+.features-row.bottom-row {
+  margin-top: 5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 0 0 auto;
+}
+
+.feature-item.left {
+  justify-content: flex-end;
+}
+
+.feature-item.right {
+  justify-content: flex-start;
+}
+
+.why-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.why-box h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.why-box p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.feature-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.center-icon-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.center-resume-icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: 15;
+}
+
+/* Horizontal Lines - Very close together, aligned with resume */
+.horizontal-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.horizontal-lines div {
+  position: absolute;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Left side lines - very close together */
+.line-left {
+  left: 20%;
+  width: 22%;
+}
+
+.line-left.line-top {
+  top: calc(50% - 10px);
+}
+
+.line-left.line-bottom {
+  top: calc(50% + 10px);
+}
+
+/* Right side lines - very close together */
+.line-right {
+  right: 20%;
+  width: 22%;
+}
+
+.line-right.line-top {
+  top: calc(50% - 10px);
+}
+
+.line-right.line-bottom {
+  top: calc(50% + 10px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .why-box {
+    width: 220px;
+    padding: 1.25rem;
+  }
+  
+  .features-row.top-row {
+    margin-bottom: 4rem;
+  }
+
+  .features-row.bottom-row {
+    margin-top: 4rem;
+  }
+  
+  .icon-box {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .center-resume-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .line-left,
+  .line-right {
+    width: 20%;
+  }
+  
+  .line-left.line-top {
+    top: calc(50% - 8px);
+  }
+
+  .line-left.line-bottom {
+    top: calc(50% + 8px);
+  }
+
+  .line-right.line-top {
+    top: calc(50% - 8px);
+  }
+
+  .line-right.line-bottom {
+    top: calc(50% + 8px);
+  }
+}
+
+@media (max-width: 768px) {
+  .features-layout {
+    max-width: 100%;
+    padding: 2rem 0;
+    margin-top: 1rem;
+  }
+  
+  .features-row {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .features-row.top-row {
+    margin-bottom: 2rem;
+  }
+  
+  .features-row.bottom-row {
+    margin-top: 2rem;
+  }
+  
+  .feature-item {
+    width: 100%;
+    justify-content: center !important;
+  }
+  
+  .why-box {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .center-icon-wrapper {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .horizontal-lines {
+    display: none;
+  }
+  
+  .icon-box {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .center-resume-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
