@@ -1,0 +1,208 @@
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  padding: 60px 20px 30px;
+  margin: 40px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer Top */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+  gap: 60px;
+}
+
+/* Footer Left - Logo and Description */
+.footer-left {
+  flex: 0 0 350px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-logo-icon {
+  width: 200px;
+  height: 200px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-logo-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-description {
+  color: #b0b0b0;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Footer Right - Links and Social */
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Footer Links Columns */
+.footer-links-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-link {
+  color: #d0d0d0;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* Social Icons Column */
+.footer-social-column {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-icon-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icon-link:hover {
+  transform: translateY(-3px);
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* Footer Bottom - Copyright */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-copyright {
+  color: #808080;
+  font-size: 12px;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .footer-section {
+    margin: 20px;
+    padding: 50px 30px 25px;
+  }
+  
+  .footer-top {
+    gap: 40px;
+  }
+  
+  .footer-left {
+    flex: 0 0 300px;
+  }
+  
+  .footer-right {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    border-radius: 20px;
+    padding: 40px 25px 20px;
+  }
+  
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer-left {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .footer-right {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .footer-social-column {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    margin: 15px;
+    padding: 30px 20px 20px;
+  }
+  
+  .footer-right {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .footer-links-column {
+    gap: 10px;
+  }
+  
+  .footer-link {
+    font-size: 12px;
+  }
+  
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}

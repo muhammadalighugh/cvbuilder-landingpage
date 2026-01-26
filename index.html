@@ -18,6 +18,9 @@
   <link href="css/WorkingProcess.css" rel="stylesheet">
   <link href="css/Prices.css" rel="stylesheet">
   <link href="css/testimonial.css" rel="stylesheet">
+  <link href="css/CTA.css" rel="stylesheet">
+  <link href="css/FAQ.css" rel="stylesheet">
+  <link href="css/Footer.css" rel="stylesheet">
 </head>
 <body>
 
@@ -559,10 +562,233 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-  <!-- Footer -->
-  <footer class="bg-dark text-center text-secondary py-4">
-    &copy; 2026 CV Builder. All rights reserved.
-  </footer>
+
+
+
+
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+  <div class="cta-content-wrapper">
+    <!-- Left Content -->
+    <div class="cta-left-content">
+      <h2 class="cta-title">Create a professional AI CV in minutes and apply with confidence.</h2>
+      <p class="cta-description">
+        SIMPLE STEPS, CLEAN TEMPLATES, AND INSTANT DOWNLOAD. EVERYTHING YOU NEED TO GET HIRED FASTER.
+      </p>
+      <div class="cta-buttons">
+        <button class="cta-btn primary">
+          CREATE YOUR CV
+          <img src="images/common/spark.svg" alt="spark" />
+        </button>
+        <button class="cta-btn secondary">VIEW TEMPLATES</button>
+      </div>
+    </div>
+    
+    <!-- Right Content - CV Image -->
+    <div class="cta-right-content">
+      <img src="images/CTA/image 17.svg" alt="CV Clipboard" class="cta-cv-image" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="faq-container">
+    <!-- Left Content -->
+    <div class="faq-left-content">
+      <div class="faq-badge">
+        <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
+        <span>FAQS</span>
+      </div>
+      <h2 class="faq-title">What People asked us mostly about our Application</h2>
+      <p class="faq-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+      </p>
+    </div>
+
+    <!-- Right Content - Accordion -->
+    <div class="faq-right-content">
+      
+      <!-- FAQ Item 1 -->
+      <div class="faq-accordion-item active">
+        <div class="faq-accordion-header" onclick="toggleFAQ(this)">
+          <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
+          <div class="faq-toggle-btn"></div>
+        </div>
+        <div class="faq-accordion-content">
+          <p class="faq-answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="faq-accordion-item">
+        <div class="faq-accordion-header" onclick="toggleFAQ(this)">
+          <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
+          <div class="faq-toggle-btn"></div>
+        </div>
+        <div class="faq-accordion-content">
+          <p class="faq-answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="faq-accordion-item">
+        <div class="faq-accordion-header" onclick="toggleFAQ(this)">
+          <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
+          <div class="faq-toggle-btn"></div>
+        </div>
+        <div class="faq-accordion-content">
+          <p class="faq-answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="faq-accordion-item">
+        <div class="faq-accordion-header" onclick="toggleFAQ(this)">
+          <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
+          <div class="faq-toggle-btn"></div>
+        </div>
+        <div class="faq-accordion-content">
+          <p class="faq-answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ JavaScript -->
+<script>
+function toggleFAQ(element) {
+  const accordionItem = element.parentElement;
+  const allItems = document.querySelectorAll('.faq-accordion-item');
+  
+  // Close all other items
+  allItems.forEach(item => {
+    if (item !== accordionItem) {
+      item.classList.remove('active');
+    }
+  });
+  
+  // Toggle current item
+  accordionItem.classList.toggle('active');
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- Footer Top -->
+    <div class="footer-top">
+      <!-- Footer Left -->
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="images/common/Logo.svg" alt="CV Builder" class="footer-logo-icon" />
+        </div>
+        <p class="footer-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        </p>
+      </div>
+
+      <!-- Footer Right -->
+      <div class="footer-right">
+        <!-- Links Column 1 -->
+        <div class="footer-links-column">
+          <a href="#" class="footer-link">HOME</a>
+          <a href="#" class="footer-link">TEMPLATES</a>
+          <a href="#" class="footer-link">FEATURES</a>
+          <a href="#" class="footer-link">PRICING</a>
+          <a href="#" class="footer-link">LOGIN</a>
+        </div>
+
+        <!-- Links Column 2 -->
+        <div class="footer-links-column">
+          <a href="#" class="footer-link">PRIVACY POLICY</a>
+          <a href="#" class="footer-link">TERM & CONDITION</a>
+          <a href="#" class="footer-link">LICENSE & ACTIVATION</a>
+          <a href="#" class="footer-link">CONTACT US</a>
+        </div>
+
+        <!-- Social Icons Column -->
+        <div class="footer-social-column">
+          <a href="#" class="social-icon-link" target="_blank">
+            <img src="images/Footer/WA.svg" alt="WhatsApp" class="social-icon" />
+          </a>
+          <a href="#" class="social-icon-link" target="_blank">
+            <img src="images/Footer/Insta.svg" alt="Instagram" class="social-icon" />
+          </a>
+          <a href="#" class="social-icon-link" target="_blank">
+            <img src="images/Footer/FB.svg" alt="Facebook" class="social-icon" />
+          </a>
+          <a href="#" class="social-icon-link" target="_blank">
+            <img src="images/Footer/In.svg" alt="LinkedIn" class="social-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025 All rights reserved by CV Builder</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+
   <!-- Bootstrap JS -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
