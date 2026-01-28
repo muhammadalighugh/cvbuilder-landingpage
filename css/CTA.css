@@ -1,9 +1,9 @@
 /* Call to Action Section */
 .cta-section {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
-  padding: 80px 20px;
-  margin: 40px;
-  border-radius: 30px;
+  padding: 40px 20px;
+  margin: 20px;
+  border-radius: 20px;
   position: relative;
   overflow: hidden;
 }
