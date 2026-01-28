@@ -195,9 +195,10 @@
   width: 100%;
   max-width: 1240px;
   height: auto;
-  margin-top: 3rem;
-  padding: 20px;
-  border-radius: 30px;
+  /* margin: TOP   RIGHT  BOTTOM LEFT */ 
+  margin: 3rem 3rem -5.2rem 3rem;
+  padding: 20px 20px 0px 20px ;
+  border-radius: 20px 20px 0px 0px;
   background: linear-gradient(135deg, 
     rgba(255, 255, 255, 0.15) 0%,
     rgba(255, 255, 255, 0.05) 100%);
@@ -215,10 +216,9 @@
 /* CV Builder Preview Image - UPDATED */
 .cv-preview-img {
   width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  display: block;
+  height: 100%;
+ border-radius: 20px 20px 0px 0px;
+   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive Design */

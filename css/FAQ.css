@@ -1,7 +1,6 @@
 /* FAQ Section */
 .faq-section {
-  background-color: #f5f5f5;
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .faq-container {
@@ -15,7 +14,6 @@
 /* Left Content */
 .faq-left-content {
   flex: 0 0 400px;
-  position: sticky;
   top: 100px;
 }
 
