@@ -21,17 +21,15 @@
   <link href="css/CTA.css" rel="stylesheet">
   <link href="css/FAQ.css" rel="stylesheet">
   <link href="css/Footer.css" rel="stylesheet">
+
+  <!-- Smooth scrolling CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-
-
-
-   <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg px-4">
@@ -51,13 +49,13 @@
             <a class="nav-link active" aria-current="page" href="#">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">TEMPLATES</a>
+            <a class="nav-link" href="#templates">TEMPLATES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FEATURES</a>
+            <a class="nav-link" href="#features">FEATURES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
+            <a class="nav-link" href="#contact">CONTACT US</a>
           </li>
         </ul>
        
@@ -72,731 +70,676 @@
     </div>
   </nav>
 
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
-
-
- <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-<!-- Hero Section -->
-<!-- Hero Section -->
-<header class="d-flex flex-column justify-content-center align-items-center text-center hero-section">
-  <!-- Hero Content -->
-  <div class="hero-content">
-    <div class="cta-badge mb-3">
-      <img src="images/Hero/User.svg" alt="users" class="rounded-circle" />
-      <span>1000+ USERS HAVE CREATED THEIR CVS</span>
-    </div>
-    <h1 class="fw-bold display-5 mb-3">Build a professional AI CV in minutes. No stress.</h1>
-    <p class="text-secondary mb-4">CREATE JOB READY RESUMES WITH SMART STEPS, CLEAN TEMPLATES, AND INSTANT EXPORT.</p>
-   
-    <div class="btn-container">
-      <a href="#" class="btn btn-light fw-bold">
-        CREATE YOUR CV
-            <img src="images/common/spark.svg" alt="spark" class="me-2" style="width: 20px; height: 20px;" />
-      </a>
-      <a href="#" class="btn btn-outline-light fw-bold">VIEW TEMPLATES</a>
-    </div>
-  </div>
-  <!-- CV Builder Preview Image with Border -->
-  <div class="cv-preview-container mt-5">
-    <img src="images/Hero/PersonalInfo.svg" alt="CV Builder Interface" class="img-fluid cv-preview-img">
-  </div>
-</header>
-
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- Features Section -->
-<section class="features-section">
-  <div class="container">
-    <!-- Header - Horizontal Layout -->
-    <div class="features-header d-flex align-items-start">
-      <!-- Left Column with Logo and Badge -->
-      <div class="features-left-column me-5">
-        <div class="d-flex align-items-center mb-3">
-          <span class="features-badge text-dark">
-            <img src="images/common/spark.svg" alt="spark" class="me-2" style="width: 20px; height: 20px;" />
-            OUR FEATURES
-          </span>
-        </div>
-        <h2 class="text-dark mb-0">Everything you need to build a professional CV</h2>
+  <!-- Hero Section -->
+  <header class="d-flex flex-column justify-content-center align-items-center text-center hero-section">
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="cta-badge mb-3">
+        <img src="images/Hero/User.svg" alt="users" class="rounded-circle" />
+        <span>1000+ USERS HAVE CREATED THEIR CVS</span>
       </div>
+      <h1 class="fw-bold display-5 mb-3">Build a professional AI CV in minutes. No stress.</h1>
+      <p class="text-secondary mb-4">CREATE JOB READY RESUMES WITH SMART STEPS, CLEAN TEMPLATES, AND INSTANT EXPORT.</p>
      
-      <!-- Right Column with Description -->
-      <div class="features-right-column">
-        <p class="mb-0">
-          EVERYTHING YOU NEED TO CREATE A PROFESSIONAL CV, IN ONE PLACE. SIMPLE TOOLS, CLEAR STEPS, AND CLEAN DESIGNS THAT HELP YOU APPLY WITH CONFIDENCE.
-        </p>
-      </div>
-    </div>
-    <!-- Grid -->
-    <div class="row g-4 mt-5">
-      <!-- Card 1 -->
-      <div class="col-lg-4">
-        <div class="feature-card pink">
-          <img src="images/features/Frame.svg" class="img-fluid" />
-          <h5 class="text-dark">Step by Step Process</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-lg-4">
-        <div class="feature-card yellow">
-          <img src="images/features/Frame (1).svg" class="img-fluid" />
-          <h5 class="text-dark">ATS Friendly Design</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-lg-4">
-        <div class="feature-card green">
-          <img src="images/features/Frame (2).svg" class="img-fluid" />
-          <h5 class="text-dark">Easy to Change Colour or Export</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="col-lg-6">
-        <div class="feature-card large yellow">
-          <img src="images/features/Frame (3).svg" class="img-fluid" />
-          <h5 class="text-dark">Live CV Preview</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
-      </div>
-      <!-- Card 5 -->
-      <div class="col-lg-6">
-        <div class="feature-card large pink">
-          <img src="images/features/Frame (4).svg" class="img-fluid" />
-          <h5 class="text-dark">100+ CV Template</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-<!-- Why Choose Us Section -->
-<section class="why-choose-us-section text-center">
-  <div class="container">
-    <div class="why-badge bg-white mb-3">
-      <img src="images/common/spark.svg" alt="spark" class="me-2" style="width: 20px; height: 20px;" />
-      <span class="text-dark">WHY CHOOSE US</span>
-    </div>
-    <h2 class="fw-bold mb-3">Why Choose Us: Trusted Solutions, Exceptional Results Every Time</h2>
-    <p class="text-secondary mb-5">WE HELP STUDENTS AND PROFESSIONALS CREATE BETTER CVS WITH LESS EFFORT. SIMPLE PROCESS, MODERN DESIGNS, AND RESULTS YOU CAN TRUST.</p>
-    
-    <div class="features-layout">
-      <!-- Top Row -->
-      <div class="features-row top-row">
-        <div class="feature-item left">
-          <div class="why-box">
-            <h5 class="text-white">5 Star Rating</h5>
-            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          </div>
-          <div class="icon-box">
-            <img src="images/whyus/magic-star.svg" alt="Star" class="feature-icon">
-          </div>
-        </div>
-        
-        <div class="feature-item right">
-          <div class="icon-box">
-            <img src="images/whyus/flash.svg" alt="Lightning" class="feature-icon">
-          </div>
-          <div class="why-box">
-            <h5 class="text-white">Fast Process</h5>
-            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Horizontal Lines -->
-      <div class="horizontal-lines">
-        <div class="line-left line-top"></div>
-        <div class="line-left line-bottom"></div>
-        <div class="line-right line-top"></div>
-        <div class="line-right line-bottom"></div>
-      </div>
-      
-      <!-- Center Resume Icon -->
-      <div class="center-icon-wrapper">
-        <img src="images/common/Icon.svg" alt="Resume" class="center-resume-icon">
-      </div>
-      
-      <!-- Bottom Row -->
-      <div class="features-row bottom-row">
-        <div class="feature-item left">
-          <div class="why-box">
-            <h5 class="text-white">Easy to Use</h5>
-            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          </div>
-          <div class="icon-box">
-            <img src="images/whyus/share.svg" alt="Share" class="feature-icon">
-          </div>
-        </div>
-        
-        <div class="feature-item right">
-          <div class="icon-box">
-            <img src="images/whyus/profile-2user.png" alt="Users" class="feature-icon">
-          </div>
-          <div class="why-box">
-            <h5 class="text-white">1000+ Users</h5>
-            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-<div class="bg-white pt-5 bg-white incsv">
-  <section class="cv-templates-section mt- bg-white">
-  <img src="images/CVs/CVs.svg" alt="CV Templates" class="cv-templates-image">
-  <div class="container">
-    <div class="cv-templates-wrapper">
-      <button class="view-more-btn">VIEW MORE TEMPLATES</button>
-    </div>
-  </div>
-</section>
-</div>
-
-
-
-
-
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-
-<!-- Working Process Section -->
-<section class="working-process-section">
-  <div class="container">
-    <!-- Section Header -->
-    <div class="text-center">
-      <div class="process-badge">
-        <img src="images/common/spark.svg" alt="spark" class="spark-icon" />
-        <span>WORKING PROCESS</span>
-      </div>
-      <h2 class="process-main-title">Create your AI CV in a few easy steps. No confusion.</h2>
-      <p class="process-description">
-        LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO
-      </p>
-    </div>
-
-    <!-- Process Steps with Arrows -->
-    <div class="process-steps-container">
-      <!-- Step One -->
-      <div class="process-step-card">
-        <div class="step-header">STEP ONE</div>
-        <h3 class="step-title">Enter Details Step by Step</h3>
-        <div class="step-image-container">
-          <img src="images/wrokingprocess/PersonalInfo3.svg" alt="Step 1: Enter Details" />
-        </div>
-      </div>
-
-      <!-- Arrow 1 -->
-      <div class="step-arrow">
-        <img src="images/common/Vector.svg" alt="arrow" />
-      </div>
-
-      <!-- Step Two -->
-      <div class="process-step-card">
-        <div class="step-header">STEP TWO</div>
-        <h3 class="step-title">Review and Select Template</h3>
-        <div class="step-image-container">
-          <img src="images/wrokingprocess/image 11.svg" alt="Step 2: Review Template" />
-        </div>
-      </div>
-
-      <!-- Arrow 2 -->
-      <div class="step-arrow">
-        <img src="images/common/Vector.svg" alt="arrow" />
-      </div>
-
-      <!-- Step Three -->
-      <div class="process-step-card">
-        <div class="step-header">STEP THREE</div>
-        <h3 class="step-title">Download & Share</h3>
-        <div class="step-image-container">
-          <img src="images/features/Frame.svg" alt="Step 3: Download" />
-        </div>
-        
-    
-
-     
-      </div>
-    </div>
-
-    <!-- Video Preview -->
-    <div class="video-preview-container">
-      <img src="images/Hero/PersonalInfo.svg" alt="CV Builder Interface" />
-      <div class="play-button-overlay"></div>
-    </div>
-  </div>
-</section>
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-<!-- Pricing Section -->
-<section class="pricing-section">
-  <div class="container">
-    <!-- Section Header -->
-    <div class="pricing-header text-center">
-      <div class="pricing-badge">
-        <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
-        <span>OUR PRICING</span>
-      </div>
-      <h2>Choose a pricing plan that fits<br>your career goals</h2>
-    </div>
-
-    <!-- Pricing Cards -->
-    <div class="pricing-cards-container">
-      
-      <!-- Pro Plan -->
-      <div class="pricing-card">
-        <h3 class="plan-name">Pro</h3>
-        <div class="plan-price">$ 09.99</div>
-        <p class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        
-        <button class="get-started-btn">
-          GET START NOW
-          <img src="images/common/spark.svg" alt="spark" />
-        </button>
-        
-        <ul class="features-list">
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-        </ul>
-      </div>
-
-      <!-- Advance Plan (Featured) -->
-      <div class="pricing-card featured">
-        <h3 class="plan-name">Advance</h3>
-        <div class="plan-price">$ 29.99</div>
-        <p class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        
-        <button class="get-started-btn">
-          GET START NOW
-          <img src="images/common/spark.svg" alt="spark" />
-        </button>
-        
-        <ul class="features-list">
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-        </ul>
-      </div>
-
-      <!-- Diamond Plan -->
-      <div class="pricing-card">
-        <h3 class="plan-name">Diamond</h3>
-        <div class="plan-price">$ 49.99</div>
-        <p class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        
-        <button class="get-started-btn">
-          GET START NOW
-          <img src="images/common/spark.svg" alt="spark" />
-        </button>
-        
-        <ul class="features-list">
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-          <li>Lorem ipsum dolor sit amet consect</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Testimonial Section -->
-<section class="testimonial-section">
-  <div class="container">
-    <!-- Section Header -->
-    <div class="testimonial-header text-center">
-      <div class="testimonial-badge">
-        <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
-        <span>TESTIMONIAL</span>
-      </div>
-      <h2>What our Users are saying</h2>
-      <p class="testimonial-description">
-        LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO
-      </p>
-    </div>
-
-    <!-- Testimonials Container -->
-    <div class="testimonials-container">
-      
-      <!-- Testimonial 1 -->
-      <div class="testimonial-card">
-        <img src="images/testimonial/Ellipse 5.svg" alt="User" class="testimonial-avatar" />
-        <p class="testimonial-text">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
-        <div class="testimonial-author">
-          <div class="author-name">John David</div>
-          <div class="author-title">Software Engineer, Notion</div>
-        </div>
-      </div>
-
-      <!-- Testimonial 2 (Featured with Video) -->
-      <div class="testimonial-card featured">
-        <img src="images/testimonial/Rectangle.svg" alt="User" class="testimonial-avatar" />
-        
-        <div class="testimonial-video-container">
-          <img src="images/testimonial/Rectangle.svg" alt="Video Thumbnail" />
-          <div class="testimonial-play-button"></div>
-        </div>
-        
-      
-        <div class="testimonial-author">
-          <div class="author-name">John David</div>
-          <div class="author-title">Software Engineer, Notion</div>
-        </div>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="testimonial-card">
-        <img src="images/testimonial/Ellipse 7.svg" alt="User" class="testimonial-avatar" />
-        <p class="testimonial-text">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
-        <div class="testimonial-author">
-          <div class="author-name">John David</div>
-          <div class="author-title">Software Engineer, Notion</div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- View More Button -->
-    <div class="text-center">
-      <button class="view-more-testimonials-btn">VIEW MORE CLIENTS STORIES</button>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-<!-- Call to Action Section -->
-<section class="cta-section">
-  <div class="cta-content-wrapper">
-    <!-- Left Content -->
-    <div class="cta-left-content">
-      <h2 class="cta-title">Create a professional AI CV in minutes and apply with confidence.</h2>
-      <p class="cta-description">
-        SIMPLE STEPS, CLEAN TEMPLATES, AND INSTANT DOWNLOAD. EVERYTHING YOU NEED TO GET HIRED FASTER.
-      </p>
-      <div class="cta-buttons">
-        <button class="cta-btn primary">
+      <div class="btn-container">
+        <a href="#" class="btn btn-light fw-bold">
           CREATE YOUR CV
-          <img src="images/common/spark.svg" alt="spark" />
-        </button>
-        <button class="cta-btn secondary">VIEW TEMPLATES</button>
+          <img src="images/common/spark.svg" alt="spark" class="me-2" style="width: 20px; height: 20px;" />
+        </a>
+        <a href="#templates" class="btn btn-outline-light fw-bold">VIEW TEMPLATES</a>
       </div>
     </div>
-    
-    <!-- Right Content - CV Image -->
-    <div class="cta-right-content">
-      <img src="images/CTA/image 17.svg" alt="CV Clipboard" class="cta-cv-image" />
+    <!-- CV Builder Preview Image with Border -->
+    <div class="cv-preview-container mt-5">
+      <img src="images/Hero/PersonalInfo.svg" alt="CV Builder Interface" class="img-fluid cv-preview-img">
     </div>
-  </div>
-</section>
+  </header>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
 
-
-
-
-
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-
-<!-- FAQ Section -->
-<section class="faq-section">
-  <div class="faq-container">
-    <!-- Left Content -->
-    <div class="faq-left-content">
-      <div class="faq-badge">
-        <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
-        <span>FAQS</span>
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <!-- Header - Horizontal Layout -->
+      <div class="features-header d-flex align-items-start">
+        <!-- Left Column with Logo and Badge -->
+        <div class="features-left-column me-5">
+          <div class="d-flex align-items-center mb-3">
+            <span class="features-badge text-dark">
+              <img src="images/common/spark.svg" alt="spark" class="me-2" style="width: 20px; height: 20px;" />
+              OUR FEATURES
+            </span>
+          </div>
+          <h2 class="text-dark mb-0">Everything you need to build a professional CV</h2>
+        </div>
+       
+        <!-- Right Column with Description -->
+        <div class="features-right-column">
+          <p class="mb-0">
+            EVERYTHING YOU NEED TO CREATE A PROFESSIONAL CV, IN ONE PLACE. SIMPLE TOOLS, CLEAR STEPS, AND CLEAN DESIGNS THAT HELP YOU APPLY WITH CONFIDENCE.
+          </p>
+        </div>
       </div>
-      <h2 class="faq-title">What People asked us mostly about our Application</h2>
-      <p class="faq-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
-      </p>
+      <!-- Grid -->
+      <div class="row g-4 mt-5">
+        <!-- Card 1 -->
+        <div class="col-lg-4">
+          <div class="feature-card pink">
+            <img src="images/features/Frame.svg" class="img-fluid" />
+            <h5 class="text-dark">Step by Step Process</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4">
+          <div class="feature-card yellow">
+            <img src="images/features/Frame (1).svg" class="img-fluid" />
+            <h5 class="text-dark">ATS Friendly Design</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-4">
+          <div class="feature-card green">
+            <img src="images/features/Frame (2).svg" class="img-fluid" />
+            <h5 class="text-dark">Easy to Change Colour or Export</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-6">
+          <div class="feature-card large yellow">
+            <img src="images/features/Frame (3).svg" class="img-fluid" />
+            <h5 class="text-dark">Live CV Preview</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-lg-6">
+          <div class="feature-card large pink">
+            <img src="images/features/Frame (4).svg" class="img-fluid" />
+            <h5 class="text-dark">100+ CV Template</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Right Content - Accordion -->
-    <div class="faq-right-content">
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us-section text-center">
+    <div class="container">
+      <div class="why-badge bg-white mb-3">
+        <img src="images/common/spark.svg" alt="spark" class="me-2" style="width: 20px; height: 20px;" />
+        <span class="text-dark">WHY CHOOSE US</span>
+      </div>
+      <h2 class="fw-bold mb-3">Why Choose Us: Trusted Solutions, Exceptional Results Every Time</h2>
+      <p class="text-secondary mb-5">WE HELP STUDENTS AND PROFESSIONALS CREATE BETTER CVS WITH LESS EFFORT. SIMPLE PROCESS, MODERN DESIGNS, AND RESULTS YOU CAN TRUST.</p>
       
-      <!-- FAQ Item 1 -->
-      <div class="faq-accordion-item active">
-        <div class="faq-accordion-header" onclick="toggleFAQ(this)">
-          <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
-          <div class="faq-toggle-btn"></div>
+      <div class="features-layout">
+        <!-- Top Row -->
+        <div class="features-row top-row">
+          <div class="feature-item left">
+            <div class="why-box">
+              <h5 class="text-white">5 Star Rating</h5>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="icon-box">
+              <img src="images/whyus/magic-star.svg" alt="Star" class="feature-icon">
+            </div>
+          </div>
+          
+          <div class="feature-item right">
+            <div class="icon-box">
+              <img src="images/whyus/flash.svg" alt="Lightning" class="feature-icon">
+            </div>
+            <div class="why-box">
+              <h5 class="text-white">Fast Process</h5>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+          </div>
         </div>
-        <div class="faq-accordion-content">
-          <p class="faq-answer">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+        
+        <!-- Horizontal Lines -->
+        <div class="horizontal-lines">
+          <div class="line-left line-top"></div>
+          <div class="line-left line-bottom"></div>
+          <div class="line-right line-top"></div>
+          <div class="line-right line-bottom"></div>
+        </div>
+        
+        <!-- Center Resume Icon -->
+        <div class="center-icon-wrapper">
+          <img src="images/common/Icon.svg" alt="Resume" class="center-resume-icon">
+        </div>
+        
+        <!-- Bottom Row -->
+        <div class="features-row bottom-row">
+          <div class="feature-item left">
+            <div class="why-box">
+              <h5 class="text-white">Easy to Use</h5>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="icon-box">
+              <img src="images/whyus/share.svg" alt="Share" class="feature-icon">
+            </div>
+          </div>
+          
+          <div class="feature-item right">
+            <div class="icon-box">
+              <img src="images/whyus/profile-2user.png" alt="Users" class="feature-icon">
+            </div>
+            <div class="why-box">
+              <h5 class="text-white">1000+ Users</h5>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- FAQ Item 2 -->
-      <div class="faq-accordion-item">
-        <div class="faq-accordion-header" onclick="toggleFAQ(this)">
-          <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
-          <div class="faq-toggle-btn"></div>
-        </div>
-        <div class="faq-accordion-content">
-          <p class="faq-answer">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-
-      <!-- FAQ Item 3 -->
-      <div class="faq-accordion-item">
-        <div class="faq-accordion-header" onclick="toggleFAQ(this)">
-          <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
-          <div class="faq-toggle-btn"></div>
-        </div>
-        <div class="faq-accordion-content">
-          <p class="faq-answer">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-
-      <!-- FAQ Item 4 -->
-      <div class="faq-accordion-item">
-        <div class="faq-accordion-header" onclick="toggleFAQ(this)">
-          <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
-          <div class="faq-toggle-btn"></div>
-        </div>
-        <div class="faq-accordion-content">
-          <p class="faq-answer">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FAQ JavaScript -->
-<script>
-function toggleFAQ(element) {
-  const accordionItem = element.parentElement;
-  const allItems = document.querySelectorAll('.faq-accordion-item');
-  
-  // Close all other items
-  allItems.forEach(item => {
-    if (item !== accordionItem) {
-      item.classList.remove('active');
-    }
-  });
-  
-  // Toggle current item
-  accordionItem.classList.toggle('active');
-}
-</script>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
 
-
-
-
-
-
-
-
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-<!-- Footer Section -->
-<footer class="footer-section">
-  <div class="footer-container">
-    <!-- Footer Top -->
-    <div class="footer-top">
-      <!-- Footer Left -->
-      <div class="footer-left">
-        <div class="footer-logo">
-          <img src="images/common/Logo.svg" alt="CV Builder" class="footer-logo-icon" />
+  <!-- CV Templates Section -->
+  <div class="bg-white pt-5 bg-white incsv">
+    <section class="cv-templates-section mt- bg-white" id="templates">
+      <img src="images/CVs/CVs.svg" alt="CV Templates" class="cv-templates-image">
+      <div class="container">
+        <div class="cv-templates-wrapper">
+          <button class="view-more-btn">VIEW MORE TEMPLATES</button>
         </div>
-        <p class="footer-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      </div>
+    </section>
+  </div>
+
+  <!-- Working Process Section -->
+  <section class="working-process-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="text-center">
+        <div class="process-badge">
+          <img src="images/common/spark.svg" alt="spark" class="spark-icon" />
+          <span>WORKING PROCESS</span>
+        </div>
+        <h2 class="process-main-title">Create your AI CV in a few easy steps. No confusion.</h2>
+        <p class="process-description">
+          LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO
         </p>
       </div>
 
-      <!-- Footer Right -->
-      <div class="footer-right">
-        <!-- Links Column 1 -->
-        <div class="footer-links-column">
-          <a href="#" class="footer-link">HOME</a>
-          <a href="#" class="footer-link">TEMPLATES</a>
-          <a href="#" class="footer-link">FEATURES</a>
-          <a href="#" class="footer-link">PRICING</a>
-          <a href="#" class="footer-link">LOGIN</a>
+      <!-- Process Steps with Arrows -->
+      <div class="process-steps-container">
+        <!-- Step One -->
+        <div class="process-step-card">
+          <div class="step-header">STEP ONE</div>
+          <h3 class="step-title">Enter Details Step by Step</h3>
+          <div class="step-image-container">
+            <img src="images/wrokingprocess/PersonalInfo3.svg" alt="Step 1: Enter Details" />
+          </div>
         </div>
 
-        <!-- Links Column 2 -->
-        <div class="footer-links-column">
-          <a href="#" class="footer-link">PRIVACY POLICY</a>
-          <a href="#" class="footer-link">TERM & CONDITION</a>
-          <a href="#" class="footer-link">LICENSE & ACTIVATION</a>
-          <a href="#" class="footer-link">CONTACT US</a>
+        <!-- Arrow 1 -->
+        <div class="step-arrow">
+          <img src="images/common/Vector.svg" alt="arrow" />
         </div>
 
-        <!-- Social Icons Column -->
-        <div class="footer-social-column">
-          <a href="#" class="social-icon-link" target="_blank">
-            <img src="images/Footer/WA.svg" alt="WhatsApp" class="social-icon" />
-          </a>
-          <a href="#" class="social-icon-link" target="_blank">
-            <img src="images/Footer/Insta.svg" alt="Instagram" class="social-icon" />
-          </a>
-          <a href="#" class="social-icon-link" target="_blank">
-            <img src="images/Footer/FB.svg" alt="Facebook" class="social-icon" />
-          </a>
-          <a href="#" class="social-icon-link" target="_blank">
-            <img src="images/Footer/In.svg" alt="LinkedIn" class="social-icon" />
-          </a>
+        <!-- Step Two -->
+        <div class="process-step-card">
+          <div class="step-header">STEP TWO</div>
+          <h3 class="step-title">Review and Select Template</h3>
+          <div class="step-image-container">
+            <img src="images/wrokingprocess/image 11.svg" alt="Step 2: Review Template" />
+          </div>
+        </div>
+
+        <!-- Arrow 2 -->
+        <div class="step-arrow">
+          <img src="images/common/Vector.svg" alt="arrow" />
+        </div>
+
+        <!-- Step Three -->
+        <div class="process-step-card">
+          <div class="step-header">STEP THREE</div>
+          <h3 class="step-title">Download & Share</h3>
+          <div class="step-image-container">
+            <img src="images/features/Frame.svg" alt="Step 3: Download" />
+          </div>
         </div>
       </div>
+
+      <!-- Video Preview -->
+      <div class="video-preview-container">
+        <img src="images/Hero/PersonalInfo.svg" alt="CV Builder Interface" />
+        <div class="play-button-overlay"></div>
+      </div>
     </div>
+  </section>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <p class="footer-copyright">© 2025 All rights reserved by CV Builder</p>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="pricing-header text-center">
+        <div class="pricing-badge">
+          <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
+          <span>OUR PRICING</span>
+        </div>
+        <h2>Choose a pricing plan that fits<br>your career goals</h2>
+      </div>
+
+      <!-- Pricing Cards -->
+      <div class="pricing-cards-container">
+        
+        <!-- Pro Plan -->
+        <div class="pricing-card">
+          <h3 class="plan-name">Pro</h3>
+          <div class="plan-price">$ 09.99</div>
+          <p class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          
+          <button class="get-started-btn">
+            GET START NOW
+            <img src="images/common/spark.svg" alt="spark" />
+          </button>
+          
+          <ul class="features-list">
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+          </ul>
+        </div>
+
+        <!-- Advance Plan (Featured) -->
+        <div class="pricing-card featured">
+          <h3 class="plan-name">Advance</h3>
+          <div class="plan-price">$ 29.99</div>
+          <p class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          
+          <button class="get-started-btn">
+            GET START NOW
+            <img src="images/common/spark.svg" alt="spark" />
+          </button>
+          
+          <ul class="features-list">
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+          </ul>
+        </div>
+
+        <!-- Diamond Plan -->
+        <div class="pricing-card">
+          <h3 class="plan-name">Diamond</h3>
+          <div class="plan-price">$ 49.99</div>
+          <p class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          
+          <button class="get-started-btn">
+            GET START NOW
+            <img src="images/common/spark.svg" alt="spark" />
+          </button>
+          
+          <ul class="features-list">
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+            <li>Lorem ipsum dolor sit amet consect</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
 
 
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="testimonial-header text-center">
+        <div class="testimonial-badge">
+          <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
+          <span>TESTIMONIAL</span>
+        </div>
+        <h2>What our Users are saying</h2>
+        <p class="testimonial-description">
+          LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO
+        </p>
+      </div>
+
+      <!-- Testimonials Container -->
+      <div class="testimonials-container">
+        
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <img src="images/testimonial/Ellipse 5.svg" alt="User" class="testimonial-avatar" />
+          <p class="testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">John David</div>
+            <div class="author-title">Software Engineer, Notion</div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 (Featured with Video) -->
+        <div class="testimonial-card featured">
+          <img src="images/testimonial/Rectangle.svg" alt="User" class="testimonial-avatar" />
+          
+          <div class="testimonial-video-container">
+            <img src="images/testimonial/Rectangle.svg" alt="Video Thumbnail" />
+            <div class="testimonial-play-button"></div>
+          </div>
+          
+        
+          <div class="testimonial-author">
+            <div class="author-name">John David</div>
+            <div class="author-title">Software Engineer, Notion</div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <img src="images/testimonial/Ellipse 7.svg" alt="User" class="testimonial-avatar" />
+          <p class="testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">John David</div>
+            <div class="author-title">Software Engineer, Notion</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View More Button -->
+      <div class="text-center">
+        <button class="view-more-testimonials-btn">VIEW MORE CLIENTS STORIES</button>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
 
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <div class="cta-content-wrapper">
+      <!-- Left Content -->
+      <div class="cta-left-content">
+        <h2 class="cta-title">Create a professional AI CV in minutes and apply with confidence.</h2>
+        <p class="cta-description">
+          SIMPLE STEPS, CLEAN TEMPLATES, AND INSTANT DOWNLOAD. EVERYTHING YOU NEED TO GET HIRED FASTER.
+        </p>
+        <div class="cta-buttons">
+          <button class="cta-btn primary">
+            CREATE YOUR CV
+            <img src="images/common/spark.svg" alt="spark" />
+          </button>
+          <button class="cta-btn secondary">VIEW TEMPLATES</button>
+        </div>
+      </div>
+      
+      <!-- Right Content - CV Image -->
+      <div class="cta-right-content">
+        <img src="images/CTA/image 17.svg" alt="CV Clipboard" class="cta-cv-image" />
+      </div>
+    </div>
+  </section>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="faq-container">
+      <!-- Left Content -->
+      <div class="faq-left-content">
+        <div class="faq-badge">
+          <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
+          <span>FAQS</span>
+        </div>
+        <h2 class="faq-title">What People asked us mostly about our Application</h2>
+        <p class="faq-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+        </p>
+      </div>
+
+      <!-- Right Content - Accordion -->
+      <div class="faq-right-content">
+        
+        <!-- FAQ Item 1 -->
+        <div class="faq-accordion-item active">
+          <div class="faq-accordion-header" onclick="toggleFAQ(this)">
+            <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
+            <div class="faq-toggle-btn"></div>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="faq-answer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header" onclick="toggleFAQ(this)">
+            <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
+            <div class="faq-toggle-btn"></div>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="faq-answer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header" onclick="toggleFAQ(this)">
+            <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
+            <div class="faq-toggle-btn"></div>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="faq-answer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header" onclick="toggleFAQ(this)">
+            <h3 class="faq-question">Lorem ipsum dolor sit amet, consectetur sed do eiusmod?</h3>
+            <div class="faq-toggle-btn"></div>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="faq-answer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+  <!-- FAQ JavaScript -->
+  <script>
+  function toggleFAQ(element) {
+    const accordionItem = element.parentElement;
+    const allItems = document.querySelectorAll('.faq-accordion-item');
+    
+    // Close all other items
+    allItems.forEach(item => {
+      if (item !== accordionItem) {
+        item.classList.remove('active');
+      }
+    });
+    
+    // Toggle current item
+    accordionItem.classList.toggle('active');
+  }
+  </script>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <!-- Footer Section -->
+  <footer class="footer-section" id="contact">
+    <div class="footer-container">
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <!-- Footer Left -->
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="images/common/Logo.svg" alt="CV Builder" class="footer-logo-icon" />
+          </div>
+          <p class="footer-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          </p>
+        </div>
+
+        <!-- Footer Right -->
+        <div class="footer-right">
+          <!-- Links Column 1 -->
+          <div class="footer-links-column">
+            <a href="#" class="footer-link">HOME</a>
+            <a href="#templates" class="footer-link">TEMPLATES</a>
+            <a href="#features" class="footer-link">FEATURES</a>
+            <a href="#" class="footer-link">PRICING</a>
+            <a href="#" class="footer-link">LOGIN</a>
+          </div>
+
+          <!-- Links Column 2 -->
+          <div class="footer-links-column">
+            <a href="#" class="footer-link">PRIVACY POLICY</a>
+            <a href="#" class="footer-link">TERM & CONDITION</a>
+            <a href="#" class="footer-link">LICENSE & ACTIVATION</a>
+            <a href="#contact" class="footer-link">CONTACT US</a>
+          </div>
+
+          <!-- Social Icons Column -->
+          <div class="footer-social-column">
+            <a href="#" class="social-icon-link" target="_blank">
+              <img src="images/Footer/WA.svg" alt="WhatsApp" class="social-icon" />
+            </a>
+            <a href="#" class="social-icon-link" target="_blank">
+              <img src="images/Footer/Insta.svg" alt="Instagram" class="social-icon" />
+            </a>
+            <a href="#" class="social-icon-link" target="_blank">
+              <img src="images/Footer/FB.svg" alt="Facebook" class="social-icon" />
+            </a>
+            <a href="#" class="social-icon-link" target="_blank">
+              <img src="images/Footer/In.svg" alt="LinkedIn" class="social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 All rights reserved by CV Builder</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Optional: Enhanced smooth scroll with JS (for older browsers) -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
