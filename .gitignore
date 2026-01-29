@@ -19,7 +19,6 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
-images/
 # IDE/editor files
 .vscode/
 .idea/
