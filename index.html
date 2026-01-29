@@ -26,47 +26,103 @@
 
   <!-- Smooth scrolling CSS -->
  
+  <!-- Go to Top Button CSS (separate styles) -->
+ 
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg px-4 ">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">
-        <img src="images/common//Logo.svg" alt="CV Builder Logo" height="40">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-     
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <!-- Centered Nav Links -->
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#templates">TEMPLATES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT US</a>
-          </li>
-        </ul>
-       
-        <!-- Right Corner Button -->
-        <div class="d-flex">
-          <a class="btn btn-light fw-bold create-btn" href="#">
-            CREATE YOUR CV
-            <img src="images/common/spark.svg" alt="spark" class="me-2" style="width: 20px; height: 20px;" />
-          </a>
-        </div>
+<!-- ================================================
+     NAVBAR – Professional right-slide mobile menu
+     Bootstrap 5 + Custom CSS
+================================================= -->
+
+<!-- Navbar HTML (unchanged) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+
+    <!-- Brand / Logo -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+      <img src="images/common/Logo.svg" alt="CV Builder" height="38" class="me-2">
+    </a>
+
+    <!-- Toggler – opens offcanvas from right -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#templates">TEMPLATES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">FEATURES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT US</a>
+        </li>
+      </ul>
+
+      <!-- CTA Button – desktop -->
+      <div class="d-none d-lg-block">
+        <a href="#" class="btn btn-light fw-semibold px-4 py-2 rounded-sm create-cv-btn">
+          CREATE YOUR CV
+          <img src="images/common/spark.svg" alt="spark" width="18" height="18" class="ms-2">
+        </a>
       </div>
     </div>
-  </nav>
+
+  </div>
+</nav>
+
+<!-- Mobile Offcanvas (slides from right) – unchanged -->
+<div class="offcanvas offcanvas-end text-white" tabindex="-1" id="offcanvasNavbar" 
+     aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header border-bottom border-secondary">
+    <h5 class="offcanvas-title fw-bold d-flex align-items-center" id="offcanvasNavbarLabel">
+      <img src="images/common/Logo.svg" alt="CV Builder" height="32" class="me-2">
+    </h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item">
+        <a class="nav-link py-3 fs-5" href="#" data-bs-dismiss="offcanvas">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link py-3 fs-5" href="#templates" data-bs-dismiss="offcanvas">TEMPLATES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link py-3 fs-5" href="#features" data-bs-dismiss="offcanvas">FEATURES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link py-3 fs-5" href="#contact" data-bs-dismiss="offcanvas">CONTACT US</a>
+      </li>
+    </ul>
+
+    <!-- CTA Button in mobile menu -->
+    <div class="mt-4 px-3">
+      <a href="#" class="btn btn-light w-100 py-3 fw-bold rounded-sm create-cv-btn">
+        CREATE YOUR CV
+        <img src="images/common/spark.svg" alt="spark" width="20" height="20" class="ms-2">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ──────────────────────────────────────────────── -->
+<!-- JavaScript – only this part was updated/improved -->
+<!-- ──────────────────────────────────────────────── -->
+
+
 
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -75,7 +131,7 @@
 
 
   <!-- Hero Section -->
-  <header class="d-flex flex-column justify-content-center align-items-center text-center hero-section">
+  <header class="d-flex flex-column justify-content-center mt-5 align-items-center text-center hero-section">
     <!-- Hero Content -->
     <div class="hero-content">
       <div class="cta-badge">
@@ -443,73 +499,80 @@
 
 
 
-  <!-- Testimonial Section -->
-  <section class="testimonial-section">
-    <div class="container">
-      <!-- Section Header -->
-      <div class="testimonial-header text-center">
-        <div class="testimonial-badge">
-          <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
-          <span>TESTIMONIAL</span>
-        </div>
-        <h2>What our Users are saying</h2>
-        <p class="testimonial-description">
-          LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO
-        </p>
+ <!-- Testimonial Section -->
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="testimonial-header text-center">
+      <div class="testimonial-badge">
+        <img src="images/common/spark.svg" alt="spark" style="width: 20px; height: 20px;" />
+        <span>TESTIMONIAL</span>
       </div>
-
-      <!-- Testimonials Container -->
-      <div class="testimonials-container">
-        
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card">
-          <img src="images/testimonial/Ellipse 5.svg" alt="User" class="testimonial-avatar" />
-          <p class="testimonial-text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-name">John David</div>
-            <div class="author-title">Software Engineer, Notion</div>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 (Featured with Video) -->
-        <div class="testimonial-card featured">
-          <img src="images/testimonial/Rectangle.svg" alt="User" class="testimonial-avatar" />
-          
-          <div class="testimonial-video-container">
-            <img src="images/testimonial/Rectangle.svg" alt="Video Thumbnail" />
-            <div class="testimonial-play-button"></div>
-          </div>
-          
-        
-          <div class="testimonial-author">
-            <div class="author-name">John David</div>
-            <div class="author-title">Software Engineer, Notion</div>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card">
-          <img src="images/testimonial/Ellipse 7.svg" alt="User" class="testimonial-avatar" />
-          <p class="testimonial-text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-name">John David</div>
-            <div class="author-title">Software Engineer, Notion</div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- View More Button -->
-      <div class="text-center">
-        <button class="view-more-testimonials-btn">VIEW MORE CLIENTS STORIES</button>
-      </div>
+      <h2>What our Users are saying</h2>
+      <p class="testimonial-description">
+        LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO
+      </p>
     </div>
-  </section>
 
+    <!-- Testimonials Container -->
+    <div class="testimonials-container">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <img src="images/testimonial/Ellipse 5.svg" alt="User" class="testimonial-avatar" />
+        <div class="testimonial-text-wrapper">
+          <p class="testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <span class="read-more">Read more</span>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-name">John David</div>
+          <div class="author-title">Software Engineer, Notion</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 (Featured with Video) -->
+      <div class="testimonial-card featured">
+        <img src="images/testimonial/Rectangle.svg" alt="User" class="testimonial-avatar" />
+        
+        <div class="testimonial-video-container">
+          <img src="images/testimonial/Rectangle.svg" alt="Video Thumbnail" />
+          <div class="testimonial-play-button"></div>
+        </div>
+        
+      
+        
+        <div class="testimonial-author">
+          <div class="author-name">John David</div>
+          <div class="author-title">Software Engineer, Notion</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <img src="images/testimonial/Ellipse 7.svg" alt="User" class="testimonial-avatar" />
+        <div class="testimonial-text-wrapper">
+          <p class="testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <span class="read-more">Read more</span>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-name">John David</div>
+          <div class="author-title">Software Engineer, Notion</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center">
+      <button class="view-more-testimonials-btn">VIEW MORE CLIENTS STORIES</button>
+    </div>
+  </div>
+</section>
 
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -633,23 +696,6 @@
 
 
 
-  <!-- FAQ JavaScript -->
-  <script>
-  function toggleFAQ(element) {
-    const accordionItem = element.parentElement;
-    const allItems = document.querySelectorAll('.faq-accordion-item');
-    
-    // Close all other items
-    allItems.forEach(item => {
-      if (item !== accordionItem) {
-        item.classList.remove('active');
-      }
-    });
-    
-    // Toggle current item
-    accordionItem.classList.toggle('active');
-  }
-  </script>
 
 
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -659,85 +705,80 @@
 
 
   <!-- Footer Section -->
-  <footer class="footer-section" id="contact">
-    <div class="footer-container">
-      <!-- Footer Top -->
-      <div class="footer-top">
-        <!-- Footer Left -->
-        <div class="footer-left">
-          <div class="footer-logo">
-            <img src="images/common/Logo.svg" alt="CV Builder" class="footer-logo-icon" />
-          </div>
-          <p class="footer-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          </p>
+  <!-- Footer Section -->
+<footer class="footer-section" id="contact">
+  <div class="footer-container">
+
+    <!-- Footer Top -->
+    <div class="footer-top">
+
+      <!-- Footer Left -->
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="images/common/Logo.svg" alt="CV Builder" class="footer-logo-icon" />
         </div>
 
-        <!-- Footer Right -->
-        <div class="footer-right">
-          <!-- Links Column 1 -->
-          <div class="footer-links-column">
-            <a href="#" class="footer-link">HOME</a>
-            <a href="#templates" class="footer-link">TEMPLATES</a>
-            <a href="#features" class="footer-link">FEATURES</a>
-            <a href="#" class="footer-link">PRICING</a>
-            <a href="#" class="footer-link">LOGIN</a>
-          </div>
-
-          <!-- Links Column 2 -->
-          <div class="footer-links-column">
-            <a href="#" class="footer-link">PRIVACY POLICY</a>
-            <a href="#" class="footer-link">TERM & CONDITION</a>
-            <a href="#" class="footer-link">LICENSE & ACTIVATION</a>
-            <a href="#contact" class="footer-link">CONTACT US</a>
-          </div>
-
-          <!-- Social Icons Column -->
-          <div class="footer-social-column">
-            <a href="#" class="social-icon-link" target="_blank">
-              <img src="images/Footer/WA.svg" alt="WhatsApp" class="social-icon" />
-            </a>
-            <a href="#" class="social-icon-link" target="_blank">
-              <img src="images/Footer/Insta.svg" alt="Instagram" class="social-icon" />
-            </a>
-            <a href="#" class="social-icon-link" target="_blank">
-              <img src="images/Footer/FB.svg" alt="Facebook" class="social-icon" />
-            </a>
-            <a href="#" class="social-icon-link" target="_blank">
-              <img src="images/Footer/In.svg" alt="LinkedIn" class="social-icon" />
-            </a>
-          </div>
-        </div>
+        <p class="footer-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        </p>
       </div>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <p class="footer-copyright">© 2025 All rights reserved by CV Builder</p>
+      <!-- Footer Right -->
+      <div class="footer-right">
+
+        <div class="footer-links-column">
+          <a href="#" class="footer-link">HOME</a>
+          <a href="#templates" class="footer-link">TEMPLATES</a>
+          <a href="#features" class="footer-link">FEATURES</a>
+          <a href="#" class="footer-link">PRICING</a>
+          <a href="#" class="footer-link">LOGIN</a>
+        </div>
+
+        <div class="footer-links-column">
+          <a href="#" class="footer-link">PRIVACY POLICY</a>
+          <a href="#" class="footer-link">TERM & CONDITION</a>
+          <a href="#" class="footer-link">LICENSE & ACTIVATION</a>
+          <a href="#contact" class="footer-link">CONTACT US</a>
+        </div>
+
+        <div class="footer-social-column">
+          <a href="#" class="social-icon-link" target="_blank">
+            <img src="images/Footer/WA.svg" alt="WhatsApp" class="social-icon" />
+          </a>
+          <a href="#" class="social-icon-link" target="_blank">
+            <img src="images/Footer/Insta.svg" alt="Instagram" class="social-icon" />
+          </a>
+          <a href="#" class="social-icon-link" target="_blank">
+            <img src="images/Footer/FB.svg" alt="Facebook" class="social-icon" />
+          </a>
+          <a href="#" class="social-icon-link" target="_blank">
+            <img src="images/Footer/In.svg" alt="LinkedIn" class="social-icon" />
+          </a>
+        </div>
+
       </div>
     </div>
-  </footer>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025 All rights reserved by CV Builder</p>
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- Go to Top Button -->
+  <button id="goToTop" class="go-to-top">↑</button>
 
   <!-- Bootstrap JS -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Optional: Enhanced smooth scroll with JS (for older browsers) -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-  </script>
 
+  <!-- Updated smooth scrolling (handles logo + HOME href="#" to top + all #links) -->
+  
+
+
+<script src="js/script.js"></script>
 </body>
 </html>
