@@ -142,16 +142,22 @@
 }
 
 /* Buttons */
-.hero-section .btn-outline-light {
+/* HERO BUTTON BASE */
+.hero-section .btn-outline-light,
+.hero-section .btn-outline-white {
   border-radius: 0.5rem;
   padding: 0.75rem 2rem;
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: 0.5px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
   background: transparent;
-  transition: all 0.3s ease;
   white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* OUTLINE LIGHT (soft border version) */
+.hero-section .btn-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-section .btn-outline-light:hover {
@@ -161,6 +167,21 @@
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
 
+/* PURE WHITE OUTLINE (your button) */
+.hero-section .btn-outline-white {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero-section .btn-outline-white:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* SOLID BUTTON */
 .hero-section .btn-light {
   border-radius: 0.5rem;
   padding: 0.75rem 2rem;
@@ -175,6 +196,14 @@
   align-items: center;
   gap: 0.5rem;
   white-space: nowrap;
+}
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 52px; /* forces equal height */
+  padding: 0 2rem;
 }
 
 .hero-section .btn-light:hover {
