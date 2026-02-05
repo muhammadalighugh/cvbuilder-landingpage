@@ -22,9 +22,7 @@
   right: 0;
   bottom: 0;
   background-image: 
-    /* Horizontal grid lines - INCREASED GLOW */
     linear-gradient(rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px),
-    /* Vertical grid lines - INCREASED GLOW */
     linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px);
   background-size: 80px 80px;
   background-position: center center;
@@ -43,7 +41,7 @@
     transparent 85%
   );
   z-index: 0;
-  opacity: 0.5; /* Increased opacity for better visibility */
+  opacity: 0.5;
 }
 
 /* Dramatic White Light Glow Effects */
@@ -55,19 +53,10 @@
   right: 0;
   bottom: 0;
   background:
-    /* Very strong top-right white glow - reduced */
     radial-gradient(ellipse 1200px 800px at 90% 10%, rgba(255, 255, 255, 0.123) 0%, rgba(255, 255, 255, 0.06) 25%, rgba(255, 255, 255, 0.024) 45%, transparent 65%),
-    
-    /* Strong bottom-left white glow - reduced */
     radial-gradient(ellipse 1000px 700px at 10% 90%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0.045) 25%, rgba(255, 255, 255, 0.018) 45%, transparent 65%),
-    
-    /* Center area subtle illumination - reduced */
     radial-gradient(ellipse 1400px 900px at 50% 50%, rgba(255, 255, 255, 0.036) 0%, rgba(255, 255, 255, 0.015) 30%, transparent 60%),
-    
-    /* Top-left corner glow - reduced */
     radial-gradient(ellipse 800px 600px at 5% 5%, rgba(255, 255, 255, 0.054) 0%, rgba(255, 255, 255, 0.024) 35%, transparent 55%),
-    
-    /* Bottom-right corner glow - reduced */
     radial-gradient(ellipse 800px 600px at 95% 95%, rgba(255, 255, 255, 0.054) 0%, rgba(255, 255, 255, 0.024) 35%, transparent 55%);
   background-size: 100% 100%;
   z-index: 0;
@@ -116,7 +105,7 @@
   flex-wrap: nowrap;
 }
 
-/* CTA Badge */
+/* CTA Badge - PERFECT SPACING FOR ALL DEVICES */
 .cta-badge {
   position: relative;
   z-index: 1;
@@ -132,6 +121,13 @@
   font-size: 0.9rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 2rem;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.cta-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
 }
 
 .cta-badge img {
@@ -139,11 +135,11 @@
   height: 35px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 
 /* Buttons */
-/* HERO BUTTON BASE */
-.hero-section .btn-outline-light,
 .hero-section .btn-outline-white {
   border-radius: 0.5rem;
   padding: 0.75rem 2rem;
@@ -153,25 +149,8 @@
   background: transparent;
   white-space: nowrap;
   transition: all 0.3s ease;
-}
-
-/* OUTLINE LIGHT (soft border version) */
-.hero-section .btn-outline-light {
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.hero-section .btn-outline-light:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-}
-
-/* PURE WHITE OUTLINE (your button) */
-.hero-section .btn-outline-white {
   border: 2px solid #ffffff;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .hero-section .btn-outline-white:hover {
@@ -197,12 +176,13 @@
   gap: 0.5rem;
   white-space: nowrap;
 }
+
 .hero-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  height: 52px; /* forces equal height */
+  height: 52px;
   padding: 0 2rem;
 }
 
@@ -212,21 +192,15 @@
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
-/* Sparkle icon */
-.fa-wand-magic-sparkles {
-  color: #080808;
-}
-
-/* CV Builder Preview Image Container - UPDATED WITH BORDER */
+/* CV Builder Preview Image Container */
 .cv-preview-container {
   position: relative;
   z-index: 2;
   width: 100%;
   max-width: 1240px;
   height: auto;
-  /* margin: TOP   RIGHT  BOTTOM LEFT */ 
   margin: 3rem 3rem -5.2rem 3rem;
-  padding: 20px 20px 0px 20px ;
+  padding: 20px 20px 0px 20px;
   border-radius: 20px 20px 0px 0px;
   background: linear-gradient(135deg, 
     rgba(255, 255, 255, 0.15) 0%,
@@ -242,23 +216,16 @@
   justify-content: center;
 }
 
-/* CV Builder Preview Image - UPDATED */
 .cv-preview-img {
   width: 100%;
   height: 100%;
- border-radius: 20px 20px 0px 0px;
-   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive Design */
-@media (max-width: 1400px) {
-  .cv-preview-container {
-    width: 95%;
-    max-width: 1240px;
-    padding: 18px;
-  }
-}
+/* ========== RESPONSIVE DESIGN ========== */
 
+/* Tablet (992px and below) */
 @media (max-width: 992px) {
   .hero-section {
     padding: 3rem 1.5rem;
@@ -282,6 +249,7 @@
   }
 }
 
+/* Mobile (768px and below) */
 @media (max-width: 768px) {
   .hero-section {
     padding: 2rem 1rem;
@@ -306,6 +274,30 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-btn {
+    padding: 0.75rem 1.5rem;
+    height: 48px;
+    font-size: 0.95rem;
+  }
+
+  /* CTA Badge - Mobile */
+  .cta-badge {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+    white-space: nowrap;
+  }
+  
+  .cta-badge img {
+    width: 30px;
+    height: 30px;
   }
 
   .cv-preview-container {
@@ -320,19 +312,29 @@
   }
 }
 
+/* Small Phones (576px and below) */
 @media (max-width: 576px) {
   .btn-container {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
+    margin-top: 1.5rem;
+  }
+  
+  .hero-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    height: 46px;
+    font-size: 0.9rem;
   }
   
   .hero-section .btn-light,
-  .hero-section .btn-outline-light {
+  .hero-section .btn-outline-white {
     width: 100%;
-    justify-content: center;
-    padding: 0.75rem 1.5rem;
+    max-width: 300px;
+    margin: 0 auto;
   }
   
   .hero-content {
@@ -341,16 +343,28 @@
   
   .hero-section h1 {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
   
   .hero-section p {
     font-size: 0.9rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   
+  /* CTA Badge - Small Phones */
   .cta-badge {
-    font-size: 0.85rem;
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.8rem;
+    margin-bottom: 1.25rem;
+    gap: 0.4rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cta-badge img {
+    width: 28px;
+    height: 28px;
   }
 
   .cv-preview-container {
@@ -358,9 +372,95 @@
     padding: 10px;
     border-radius: 20px;
     width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   
   .cv-preview-img {
     border-radius: 12px;
+  }
+}
+
+/* Extra Small Phones (375px and below) */
+@media (max-width: 375px) {
+  .hero-section {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .hero-content {
+    padding: 1rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero-section p {
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .btn-container {
+    gap: 0.5rem;
+    max-width: 280px;
+  }
+  
+  .hero-btn {
+    height: 44px;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  /* CTA Badge - Extra Small Phones */
+  .cta-badge {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    gap: 0.35rem;
+    white-space: normal;
+    max-width: 95%;
+    line-height: 1.2;
+  }
+  
+  .cta-badge img {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .cta-badge span {
+    font-size: 0.7rem;
+  }
+  
+  .cv-preview-container {
+    margin-top: 1.25rem;
+    padding: 8px;
+  }
+}
+
+/* Very Small Phones (320px and below) */
+@media (max-width: 320px) {
+  /* CTA Badge - Very Small Phones */
+  .cta-badge {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+    white-space: normal;
+    line-height: 1.2;
+  }
+  
+  .cta-badge span {
+    font-size: 0.65rem;
+  }
+  
+  .cta-badge img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-section p {
+    font-size: 0.8rem;
   }
 }
